@@ -2,20 +2,30 @@
 <!-- See LICENSE in the project root for license information -->
 <!DOCTYPE html>
 <html>
+
 <body>
   <script src="https://statics.teams.microsoft.com/sdk/v0.3/js/MicrosoftTeams.min.js"></script>
+  <form>
+    <input type="radio" name="maptype" value="Workplace" onclick="onClick()"> I Agree
+  </form>
   <script type="text/javascript">
-    microsoftTeams.settings.setValidityState(true);
     microsoftTeams.initialize();
     microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
-      microsoftTeams.settings.setSettings({
-        contentUrl: "https://sadasystems.facebook.com/groups/306607256386321/",
-        suggestedTabName: "Workplace",
-        websiteUrl: "https://sadasystems.facebook.com",
-        removeUrl: window.location.origin + "/tabremove.html"
-      });
+      if (radios[0].checked) {
+        microsoftTeams.settings.setSettings({
+          contentUrl: "https://www.google.com/maps/embed/",
+          suggestedTabName: "Workplace",
+          websiteUrl: "https://sadasystems.facebook.com",
+          removeUrl: window.location.origin + "/tabremove.html"
+        });
+      }
       saveEvent.notifySuccess();
     });
+
+    function onClick() {
+      microsoftTeams.settings.setValidityState(true);
+    }
   </script>
 </body>
+
 </html>

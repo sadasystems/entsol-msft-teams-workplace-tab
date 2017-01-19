@@ -19,7 +19,7 @@
     "88": "maps88.png"
   },
   "accentColor" : "#223344",
-  "configUrl": "https://sadamesstorage.blob.core.windows.net/mescontainer1/tabconfig.html",
+  "configUrl": "https://sadademo01.azurewebsites.net/tabconfig.html",
   "canUpdateConfig": true,
   "needsIdentity": false,
   "validDomains": [
