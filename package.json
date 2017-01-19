@@ -1,17 +1,17 @@
 {
-  "name": "microsoft-teams-sample-get-started",
+  "name": "entsol-msft-teams-workplace-tab",
   "version": "1.0.0",
   "author": {
-    "name": "Microsoft"
+    "name": "Sada Systems"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OfficeDev/microsoft-teams-sample-get-started.git"
+    "url": "git+https://github.com/sadasystems/entsol-msft-teams-workplace-tab.git"
   },
   "bugs": {
-    "url": "https://github.com/OfficeDev/microsoft-teams-sample-get-started/issues"
+    "url": "https://github.com/sadasystems/entsol-msft-teams-workplace-tab/issues"
   },
-  "homepage": "https://github.com/OfficeDev/microsoft-teams-sample-get-started#readme",
+  "homepage": "https://github.com/sadasystems/entsol-msft-teams-workplace-tab#readme",
   "private": true,
   "scripts": {
     "start": "node server.js",
